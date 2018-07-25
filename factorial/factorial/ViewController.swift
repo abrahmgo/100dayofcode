@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     {
         super.viewDidLoad()
         // MAIN
-        let lados: Int = 2
+        let lados: Int = 20
         var rutasPosbiles: BigInt = 0
         rutasPosbiles = (classFactor.daFactorial(lados+lados))/(classFactor.daFactorial(lados)*classFactor.daFactorial(lados))
         
