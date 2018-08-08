@@ -1,9 +1,5 @@
-# applicationTest7
+# 100daysofcode
 
-
-
-open factorial.xcworkspace and run it
-
-this app don't have any graph, only i done this because i need a pod for a biggest int
+i upload some examples for beginners in programing, if you want put other solution for some a problem of here , please upload it in another branch
 
 Andrés Bonilla Gómez abraham.go@outlook.com
