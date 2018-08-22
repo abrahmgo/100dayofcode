@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Interstate Light.otf">
+            <string>Interstate-Light</string>
+        </array>
+        <array key="Interstate Regular.otf">
+            <string>Interstate-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="customAlertView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFE-ov-xe0">
+                                <rect key="frame" x="24" y="224" width="327" height="239"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="StZ-DU-zJ3">
+                                        <rect key="frame" x="18" y="166" width="285" height="49"/>
+                                        <fontDescription key="fontDescription" name="Interstate-Regular" family="Interstate" pointSize="22"/>
+                                        <state key="normal" title="Aceptar"/>
+                                        <connections>
+                                            <segue destination="NH6-ll-c9B" kind="show" id="myJ-so-d3R"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verifica tu conexión a internet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pm-Ol-9pg">
+                                        <rect key="frame" x="55" y="90" width="217" height="16"/>
+                                        <fontDescription key="fontDescription" name="Interstate-Light" family="Interstate" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="warning.png" translatesAutoresizingMaskIntoConstraints="NO" id="mof-dF-2RU">
+                                        <rect key="frame" x="138" y="8" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="80q-wK-ree"/>
+                                            <constraint firstAttribute="width" constant="44" id="oV7-YG-fa8"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="e intenta de nuevo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgu-ZU-msG">
+                                        <rect key="frame" x="94" y="114" width="133" height="16"/>
+                                        <fontDescription key="fontDescription" name="Interstate-Light" family="Interstate" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sin Conexión" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7G-or-Rcn">
+                                        <rect key="frame" x="94" y="60" width="132" height="22"/>
+                                        <fontDescription key="fontDescription" name="Interstate-Regular" family="Interstate" pointSize="22"/>
+                                        <color key="textColor" red="0.074509803921568626" green="0.43137254901960786" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="StZ-DU-zJ3" firstAttribute="leading" secondItem="iFE-ov-xe0" secondAttribute="leading" constant="18" id="2oF-Jq-171"/>
+                                    <constraint firstItem="5pm-Ol-9pg" firstAttribute="top" secondItem="T7G-or-Rcn" secondAttribute="bottom" constant="8" symbolic="YES" id="GUu-zM-b6M"/>
+                                    <constraint firstItem="Wgu-ZU-msG" firstAttribute="centerX" secondItem="StZ-DU-zJ3" secondAttribute="centerX" id="VIq-mb-yCg"/>
+                                    <constraint firstItem="T7G-or-Rcn" firstAttribute="leading" secondItem="iFE-ov-xe0" secondAttribute="leading" constant="94" id="VZQ-Xq-3O2"/>
+                                    <constraint firstAttribute="bottom" secondItem="StZ-DU-zJ3" secondAttribute="bottom" constant="24" id="b3q-7f-oGT"/>
+                                    <constraint firstItem="5pm-Ol-9pg" firstAttribute="centerX" secondItem="iFE-ov-xe0" secondAttribute="centerX" id="cgL-hQ-kBp"/>
+                                    <constraint firstItem="Wgu-ZU-msG" firstAttribute="top" secondItem="5pm-Ol-9pg" secondAttribute="bottom" constant="8" symbolic="YES" id="ch2-eP-wSY"/>
+                                    <constraint firstItem="StZ-DU-zJ3" firstAttribute="top" secondItem="Wgu-ZU-msG" secondAttribute="bottom" constant="36" id="fp0-ve-eec"/>
+                                    <constraint firstItem="mof-dF-2RU" firstAttribute="top" secondItem="iFE-ov-xe0" secondAttribute="topMargin" id="niP-i6-Dl6"/>
+                                    <constraint firstItem="T7G-or-Rcn" firstAttribute="centerX" secondItem="mof-dF-2RU" secondAttribute="centerX" id="ukd-36-3ep"/>
+                                    <constraint firstItem="T7G-or-Rcn" firstAttribute="top" secondItem="mof-dF-2RU" secondAttribute="bottom" constant="8" symbolic="YES" id="xUg-HE-HXI"/>
+                                    <constraint firstItem="T7G-or-Rcn" firstAttribute="leading" secondItem="Wgu-ZU-msG" secondAttribute="leading" id="ztv-SF-qzO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iFE-ov-xe0" secondAttribute="bottom" constant="204" id="5Yf-kB-ZHs"/>
+                            <constraint firstItem="iFE-ov-xe0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="204" id="U9E-bm-Nr8"/>
+                            <constraint firstItem="iFE-ov-xe0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="V4u-9c-A8i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iFE-ov-xe0" secondAttribute="trailing" constant="24" id="qra-Ep-xhM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnAceptar" destination="StZ-DU-zJ3" id="vz3-rr-lth"/>
+                        <outlet property="contentAlertView" destination="iFE-ov-xe0" id="bEv-lq-ZoI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+        </scene>
+        <!--View Custom View Controller-->
+        <scene sceneID="Zxw-ph-Ibp">
+            <objects>
+                <viewController id="NH6-ll-c9B" customClass="ViewCustomViewController" customModule="customAlertView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vCk-3b-qQj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_t.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Pbz-on-bSb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TFM-Wp-69m" customClass="AlertView" customModule="customAlertView" customModuleProvider="target">
+                                <rect key="frame" x="21" y="205" width="331" height="259"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Pbz-on-bSb" firstAttribute="top" secondItem="vCk-3b-qQj" secondAttribute="top" id="7yx-i5-E77"/>
+                            <constraint firstItem="Pbz-on-bSb" firstAttribute="bottom" secondItem="gg5-bI-3fb" secondAttribute="bottom" id="8wR-VL-kLW"/>
+                            <constraint firstItem="TFM-Wp-69m" firstAttribute="centerX" secondItem="vCk-3b-qQj" secondAttribute="centerX" constant="-1" id="9Gf-Y1-XLD"/>
+                            <constraint firstItem="Pbz-on-bSb" firstAttribute="centerX" secondItem="TFM-Wp-69m" secondAttribute="centerX" constant="1" id="CMg-4j-2xc"/>
+                            <constraint firstItem="TFM-Wp-69m" firstAttribute="top" secondItem="gg5-bI-3fb" secondAttribute="top" constant="185" id="Lov-KW-WYz"/>
+                            <constraint firstItem="gg5-bI-3fb" firstAttribute="bottom" secondItem="TFM-Wp-69m" secondAttribute="bottom" constant="203" id="NNr-eb-ffN"/>
+                            <constraint firstItem="TFM-Wp-69m" firstAttribute="leading" secondItem="gg5-bI-3fb" secondAttribute="leading" constant="21" id="gxf-Kj-6bV"/>
+                            <constraint firstItem="Pbz-on-bSb" firstAttribute="leading" secondItem="vCk-3b-qQj" secondAttribute="leading" id="m3q-zf-FlZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gg5-bI-3fb"/>
+                    </view>
+                    <connections>
+                        <outlet property="Custom" destination="TFM-Wp-69m" id="SdP-AI-Ybr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zw1-Av-XgS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="704.79999999999995" y="38.23088455772114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back_t.jpg" width="736" height="1309"/>
+        <image name="warning.png" width="256" height="256"/>
+    </resources>
+</document>
